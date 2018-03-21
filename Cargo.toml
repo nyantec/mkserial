@@ -3,6 +3,9 @@ name = "mkserial"
 version = "0.0.0"
 authors = ["Mikael Voss <mvs@nyantec.com>"]
 
+description = "Serial number generator for X.509 certificates"
+license = "CC0-1.0"
+
 [dependencies]
 rand = "0.4"
 num-bigint = "0.1"

@@ -1,12 +1,13 @@
 [package]
 name = "mkserial"
-version = "0.0.0"
+version = "0.0.1"
 authors = ["Mikael Voss <mvs@nyantec.com>"]
+edition = "2018"
 
 repository = "https://github.com/nyantec/mkserial"
 description = "Serial number generator for X.509 certificates"
 license = "CC0-1.0"
 
 [dependencies]
-rand = "0.4"
-num-bigint = "0.1"
+rand = "0.7"
+num-bigint = { version = "0.3", features = ["rand"] }

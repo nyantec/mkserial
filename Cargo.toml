@@ -9,8 +9,8 @@ description = "Serial number generator for X.509 certificates"
 license = "CC0-1.0"
 
 [dependencies]
-rand = "0.8"
-num-bigint = { version = "0.4", features = ["rand"] }
+rand_core = { version = "0.6", default-features = false, features = ["getrandom"] }
+num-bigint = { version = "0.4", default-features = false, features = ["rand"] }
 
 [profile.release]
 lto = "thin"

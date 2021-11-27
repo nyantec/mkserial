@@ -14,3 +14,7 @@ num-bigint = { version = "0.4", features = ["rand"] }
 
 [profile.release]
 lto = "thin"
+
+[profile.test]
+opt-level = 1
+lto = "thin"
